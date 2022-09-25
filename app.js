@@ -27,14 +27,14 @@ function whoWin(botVal, player) {
 function paper(player) {
   switch(player) {
     case 'paper':
-      swal('Ничья');
+      alert('Ничья');
       break;
     case 'rock':
       score = 0;
-      swal('Bot win'); 
+      alert('Bot win'); 
       break;
     case 'scissors':
-      swal('You win');
+      alert('You win');
       score++
       break
   }
@@ -44,15 +44,15 @@ function paper(player) {
 function rock(player) {
   switch(player) {
     case 'paper':
-      swal('You win');
+      alert('You win');
       score++
       break;
     case 'rock':
-      swal('Ничья');
+      alert('Ничья');
       break;
     case 'scissors':
       score = 0;
-      swal('Bot win');
+      alert('Bot win');
       break
   }
   scoreVal.innerHTML = `${score}`;
@@ -62,14 +62,14 @@ function scissors(player) {
   switch(player) {
     case 'paper':
       score = 0;
-      swal('Bot win');
+      alert('Bot win');
       break;
     case 'rock':
       swal('You win');
       score++
       break;
     case 'scissors':
-      swal('Ничья');
+      alert('Ничья');
       break
   }
   scoreVal.innerHTML = `${score}`;
